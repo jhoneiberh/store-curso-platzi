@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/logos/favicon_yard_sale.svg" type="image/x-icon">
+    <title>Proyecto Frontend Developer</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        main
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        main section
+        {
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            margin-top: 30px;
+            box-sizing: border-box;
+        }
+        main section figure
+        {
+            margin-bottom: 20px;
+        }
+        main section:first-child figure img
+        {
+            height: 30px;
+        }
+        h1
+        {
+            font-family: Quicksand;
+            text-align: center;
+            font-size: 28px;
+        }
+        main section:last-child ul
+        {
+            list-style: none;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 20px;
+            column-gap: 10px;
+        }
+        .button
+        {
+            background-color: #1A374D;
+            font-family: Quicksand, 'Arima Madurai';
+            font-size: 15px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 1px 2px 1px black;
+            border: none;
+            padding: 5px;
+            width: 130px;
+            height: 50px;
+            color: white;
+            font-weight: 600;
+        }
+        .link:hover
+        {
+            background-color: #00C4FC;
+        }
+        @media (min-width: 440px) and (max-width: 640px)
+        {
+            main section:last-child ul
+            {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 438px)
+        {
+            main 
+            {
+                height: 110vh;
+            }
+            h1
+            {
+                font-size: 20px;
+            }
+            main section:last-child
+            {
+                margin-bottom: 30px;
+            }
+            main section:last-child ul
+            {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        }
+
+        @media (max-width: 319px)
+        {
+            h1 
+            {
+                font-size: 18px;
+            }
+            main section:last-child ul
+            {
+                display: grid;
+                grid-template-columns: auto;
+            }
+            main 
+            {
+                height: 150vh;
+            }
+            .button
+            {
+                width: 100px;
+                height: 30px;
+                row-gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <figure>
+                <img src="/logos/logo_yard_sale.svg" alt="">
+            </figure>
+            <h1>Curso Practico Frontend Developer</h1>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    <a href="/clase1.html" target="_blank">
+                        <button class="button link link">Clase 1</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="clase2-email-sent.html" target="_blank">
+                        <button class="button link link">Clase 2</button>
+                    </a>                    
+                </li>
+                <li>
+                    <a href="/clase3-login.html" target="_blank">
+                        <button class="button link">Clase 3</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase4-create-edit-account.html" target="_blank">
+                        <button class="button link">Clase 4</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase5-edit-account.html" target="_blank">
+                        <button class="button link">Clase 5</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase6-page-inicio.html" target="_blank">
+                        <button class="button link">Clase 6</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase7-menu.html" target="_blank">
+                        <button class="button link">Clase 7</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase8-menu-mobile.html" target="_blank">
+                        <button class="button link">Clase 8</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase9-order.html" target="_blank">
+                        <button class="button link">Clase 9</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase10-mis-ordenes-mine.html" target="_blank">
+                        <button class="button link">Clase 10</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase11-navbar.html" target="_blank">
+                        <button class="button link">Clase 11</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase12-detail-product.html" target="_blank">
+                        <button class="button link">Clase 12</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/clase13-shopping-cart.html" target="_blank">
+                        <button class="button link link">Clase 13</button>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

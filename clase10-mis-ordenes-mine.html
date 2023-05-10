@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./logos/favicon_yard_sale.svg" type="image/x-icon">
+    <title>Clase 10</title>
+    <style>
+        :root 
+        {
+            --white: #ffffff;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --color-mine: #1A374D;
+            --color-mine-two: #406882;
+            --bold: bold;
+            --vb: 24px;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+
+        }
+        body
+        {
+            font-family: Quicksand;
+            background-color: var(--color-mine);
+        }
+        .full-container
+        {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            /* justify-content: center; */
+            
+        }
+        .full-content
+        {
+            width: 400px;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        h1
+        {
+            font-size: var(--vb);
+            /* color: var(--color-mine); */
+            color: var(--white);
+        }
+        .content
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .item-product 
+        {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            margin-bottom: 10px;
+            gap: 16px;
+            align-items: center;
+        }
+        .item-product p:nth-child(2)
+        {
+            font-weight: var(--bold);
+        }
+
+        .item-product span
+        {
+            display: flex;
+            flex-direction: column;
+            font-weight: var(--bold);
+        }
+        .item-product p
+        {
+            /* color: var(--color-mine); */
+            color: var(--white);
+        }
+        .item-product p span:nth-child(2)
+        {
+            color: var(--color-mine-two);
+        }
+        .item-product p:nth-child(2)
+        {
+            text-align: end;
+        }
+        .item-product a
+        {
+            text-decoration: none;
+            color: var(--white);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="full-container">
+        <div class="full-content">
+            <h1>My orders</h1>
+            <div class="content">
+                <div class="item-product">
+                    <p>
+                        <span>04.25.2021</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$ 120.00</p>
+                    <p>
+                        <a href="">></a>
+                    </p>
+                </div>
+
+                <div class="item-product">
+                    <p>
+                        <span>04.25.2021</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$ 120.00</p>
+                    <p>
+                        <a href="">></a>
+                    </p>
+                </div>
+
+                <div class="item-product">
+                    <p>
+                        <span>04.25.2021</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$ 120.00</p>
+                    <p>
+                        <a href="">></a>
+                    </p>
+                </div>
+
+                <div class="item-product">
+                    <p>
+                        <span>04.25.2021</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$ 120.00</p>
+                    <p>
+                        <a href="">></a>
+                    </p>
+                </div>
+
+                <div class="item-product">
+                    <p>
+                        <span>04.25.2021</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$ 120.00</p>
+                    <p>
+                        <a href="">></a>
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

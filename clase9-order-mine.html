@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./logos/favicon_yard_sale.svg" type="image/x-icon">
+    <title>Clase 9</title>
+    <style>
+        :root 
+        {
+            --white: #ffffff;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --color-mine: #1A374D;
+            --color-mine-two: #406882;
+            --bold: bold;
+            --vb: 24px;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+
+        }
+        body
+        {
+            font-family: Quicksand;
+        }
+        .main
+        {
+            width: 100%;
+            height: 100vh;        
+            display: grid;
+            place-items: center;
+        }
+         .title
+        {
+            margin-bottom: -40px;
+            text-align: end;
+            font-size: var(--vb);
+        }
+        
+        .order-full
+        {
+            width: 300px;
+            height: 70px;
+            padding: -30px;
+            border-radius: 5px ;
+            background-color: var(--text-input-field);
+        }
+        .order-full p
+        {
+            margin: 0;
+        }
+        .order-full .list
+        {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .order-full .list li:last-child
+        {
+            font-size: 10px;
+            font-weight: 300;
+        }
+        .list li:nth-child(1), .list li:nth-child(2)
+        {
+            font-weight: var(--bold);
+        }
+        .order-full .list li:nth-child(2)
+        {
+            text-align: right;
+        }
+        .order ul
+        {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            border: 1px solid;
+            border-radius: 5px;
+            width: 300px;
+            height: 90px;
+        }
+        .order p
+        {
+            margin: 0;
+        }
+        .order ul li:last-child
+        {
+            text-align: right;
+        }
+
+        .order ul li:first-child img
+        {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            object-fit: cover;  
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">My order</h1>
+        <div class="main-container">
+            
+            <div class="order-full">
+                <ul class="list">
+                    <li>
+                        <p>04-25-2021</p>
+                    </li>
+                    <li>
+                        <p>$540,00</p>
+                    </li>
+                    <li>
+                        <p>6 unidades</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="order">
+                <ul>
+                    <li>
+                        <img src="https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_1280.jpg" alt="image">
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>$120,00</p>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <img src="https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_1280.jpg" alt="image">
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>$120,00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
